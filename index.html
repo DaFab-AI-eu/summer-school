@@ -198,15 +198,15 @@ mark {
 			<div class="wow fadeInUp col-md-10 col-sm-10" data-wow-delay="0.9s">
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
-					<li class="active"><a href="#atscale" aria-controls="ai_and_eo" role="tab" data-toggle="tab">AI and EO</a></li>
-					<li><a href="#distinguished" aria-controls="distinguished" role="tab" data-toggle="tab">AI and Performance</a></li>
-					<li><a href="#flash" aria-controls="flash" role="tab" data-toggle="tab">Workflows</a></li>
-					<li><a href="#hpc" aria-controls="hpc" role="tab" data-toggle="tab">EO and Data Management</a></li>
+					<li class="active"><a href="#ai_and_eo" aria-controls="ai_and_eo" role="tab" data-toggle="tab">AI and EO</a></li>
+					<li><a href="#ai_and_performance" aria-controls="ai_and_performance" role="tab" data-toggle="tab">AI and Performance</a></li>
+					<li><a href="#workflows" aria-controls="workflows" role="tab" data-toggle="tab">Workflows</a></li>
+					<li><a href="#eo_and_data" aria-controls="eo_and_data" role="tab" data-toggle="tab">EO and Data Management</a></li>
 				</ul>
 				<!-- tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="ai_and_eo">
-						<h3> 9h-11h00   Cloud and Storage </h3>
+						<h3> 9h-11h00   AI and Earth Observation </h3>
                                                 <div class="program-divider col-md-12 col-sm-12"></div>
 
 						<!-- program divider -->
@@ -214,7 +214,7 @@ mark {
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/alena.jpg" class="img-responsive" alt="program">
+							<img src="images/Alena.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
@@ -222,95 +222,10 @@ mark {
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Title to be announced</h2>
-							<h3> Speaker to be annouced  </h3>
+							<h3> Helen Bakhorina, G-Core labs</h3>
 							<p> Abstract to be provided </p>
 						</div>
-						
 						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/valentin_honoré.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h20 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Bridging the gap between cold and hot storage at scale </h2>
-                            				<h3> Valentin Honoré, ENSIEE</h3>
-							<p>  Data management at scale is a challenge for both academic and private institutions.  Indeed, large-scale scientific simulation programs require more and more data, in very sophisticated analysis workflows.  For instance, the LHC experiment at CERN is generating 30 PB of data every year, with a total of 100 PB permanently archived.  Mass storage is also central in Cloud infrastructures, that have to deal with EB of data (for instance, Google offers 27 EB of free storage with Gmail).  Such amount of data are stored in dedicated data centers, with two main paradigms: cold storage using magnetic tapes (mass capacity, slow access time) and disks for intermediate to short term storage (so called "hot" data).  Tapes are interfaced with disks throughout dedicated software layers, which do not allow direct access to tapes from computing resources, should they be in a Cloud environment or on computing clusters. Hence, data movement between cold and hot storage becomes more and more critical in the performance of both computing and storage infrastructures.  We present in this talk a roadmap for building a better continuum between cold and hot storage, by deriving new software interactions between the resource management system and the tape systems.  This roadmap expects to be very collaborative, especially with academic and private actors using mass tape storage systems (CEA, Cloud providers etc) </p>
-						</div>
-
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Alexandru_dobrila.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h40 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Scaling a decentralization p2p storage system </h2> 
-							<h3> Alexandru Dobrila, HIVENET</h3>
-                            				<p> TBA</p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Jana_Toljaga.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 10h00</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> VolipMem: a system-level PMEM Runtime</h2>
-							<h3> Jana Toljaga, Institut Polytechnique de Paris </h3>
-							<p> Persistent memory (PMEM) offers durability at byte granularity and operates at nearly the speed of volatile memory. While this technology holds great promise for improving performance in large databases and analytics systems, current PMEM runtimes fail to provide a simple interface. This is because developers must manually specify the write set of a failure-atomic block. To avoid the burden of manually specifying the write set, we propose to use low-level hardware features managed by the operating system. To access these features, we isolate the system part of a PMEM runtime, and define three new system primitives: two to define a failure-atomic section and one to recover and map a PMEM in a process. We implemented this interface in VolipMem, which leverages virtualization to expose a page table in a process. We integrated VolipMem into three language runtimes, and evaluated these runtimes with two databases and several libraries. Our results show that VolipMem is both easy to use and efficient.</p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Lydia_AIT_OUCHEGGOU.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 10h20</span> 
-								<span><i class="fa fa-map-marker"></i> Amphi Thévenin</span>
-							</h6>
-							<h2> Bridging Local Efficiency and Global Cost: Two Complementary ICN Caching Strategies </h2>
-							<h3> Lydia AIT OUCHEGGOU </h3>
-							<p> In-network caching plays a pivotal role in enabling scalable, low-latency data delivery in Information-Centric Networking (ICN). However, as data volumes continue to surge, existing storage infrastructures—especially multi-tiered systems with varying cost and performance characteristics—struggle to keep pace. Meanwhile, critical concerns such as energy efficiency, bandwidth constraints, and Quality of Service (QoS) are often overlooked. Current caching strategies fall into two camps: centralized approaches that optimize local cache performance but neglect network-wide costs, and distributed methods that encourage global coordination but often ignore hardware heterogeneity and fail to enforce fine-grained QoS. To address these challenges, we introduce two complementary solutions. QM-ARC is a centralized, QoS-aware multi-tier adaptive replacement strategy that extends ARC by incorporating application and user priorities through a penalty-based model inspired by Service Level Agreements (SLAs). Complementing this, CL2SM (Cache Less to Save More) is a distributed caching algorithm designed to optimize content placement and replication across multi-tier nodes while minimizing total system cost. It integrates a holistic cost model covering hardware depreciation, bandwidth, energy consumption, and SLA penalties. Together, these strategies offer a unified, intelligent, and cost-effective caching framework tailored for the evolving demands of next-generation ICN.</p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 10h40 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2>Title to be announced </h2>
-							<h3>TBA </h3>
-                            				<p> abstract to be provided </p>
-						</div>
-						<!-- program divider -->
-
 						<div class="program-divider col-md-12 col-sm-12"></div>
 						<div class="col-md-2 col-sm-2">
 							<img src="images/coffee_small.png" class="img-responsive" alt="program">
@@ -323,19 +238,19 @@ mark {
                         			</div>
 					</div>
 
-					<div role="tabpanel" class="tab-pane" id="distinguished">
+					<div role="tabpanel" class="tab-pane" id="ai_and_performance">
 						<!-- program speaker here -->
-						<h3> 11h20-12h00 Young Researchers Distinguished Talks</h3>
+						<h3> 9h-11h AI and Performance </h3>
 						<div class="col-md-2 col-sm-2">
-							<img src="images/Louis-Marie-Nicolas.png" class="img-responsive" alt="program">
+							<img src="images/farouk.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 11h20</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2>DVFS for HPC I/O optimization: a Microbenchmarking Approach</h2>
-							<h3> Louis-Marie Nicolas, ATOS/EVIDEN </h3>
+							<h2>Title to be annouced </h2>
+							<h3> Farouk Mansouri, LuxProvide</h3>
 							<p> Abstract to be provided </p> 
 						</div>
 
@@ -344,109 +259,32 @@ mark {
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/Catherine_Guelque.jpeg" class="img-responsive" alt="program">
+							<img src="images/female_speaker.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 11h40</span> 
+								<span><i class="fa fa-clock-o"></i> 9h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> Pallas: a generic trace format for large HPC trace analysis</h2>
-							<h3> Catherine Guelque, TelecomSudParis </h3>
-							<p> Identifying performance bottlenecks in a parallel application is tedious, especially because it requires analyzing the behaviour of various software components, as bottlenecks may have several causes and symptoms. For example, a load imbalance may cause long MPI waiting times, or contention on disk may degrade the performance of I/O operations. Detecting a performance problem means investigating the execution of an application and applying several performance analysis techniques. To do so, one can use a tracing tool to collect information describing the behaviour of the application. Tracing applications may alter the performance of the application, and can create thousands of heavy trace files, especially at a large scale. Most importantly, the post-mortem analysis needs to load these thousands of trace files in memory, and process them. This quickly becomes impractical for large scale applications, as memory gets exhausted and the number of opened files exceeds the system capacity.
-We propose PALLAS, a generic trace format tailored for conducting various post-mortem performance analysis of traces describing large executions of HPC applications. During the execution of the application, PALLAS collects events and detects their repetitions on-the-fly. When storing the trace to disk, PALLAS groups the data from similar events or groups of events together in order to later speed up trace reading. We demonstrate that the PALLAS online detection of the program structure does not significantly degrade the performance of the applications. Moreover, the PALLAS format allows faster trace analysis compared to other evaluated trace formats. Overall, the PALLAS trace format allows an interactive analysis of a trace that is required when a user investigates a performance problem.</p> 
+							<h2> Title to be announced </h2>
+							<h3> speaker to be announced </h3>
+							<p> abstract to be provided.  </p> 
 						</div>
 					</div>
 
-					<div role="tabpanel" class="tab-pane" id="flash">
+					<div role="tabpanel" class="tab-pane" id="workflows">
 						<!-- program speaker here -->
-						<h3> 12h-12h30 Flash presentations poster introduction</h3>
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Meline-trochon.jpg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 12h00</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Characterization of IO interferences</h2>
-							<h3> Méline Trochon, INRIA / DDN </h3>
-							<p> Abstract to be provided </p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/meriem_bouzouad.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 12h05</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Adaptive Layer Compression and Storage with QoS-Aware loading for LLM Serving</h2>
-							<h3> Meriem BOUZOUAD, ENSTA </h3>
-							<p> Today, large language models have demonstrated their strengths in various tasks ranging from reasoning, code generation or complex problem solving. However, this advancement comes with high computational cost, and requires considerable memory to store the model parameters and request context, making it challenging to deploy these models on edge devices to ensure real-time responses and data privacy.  The rise of edge accelerators has significantly boosted on-device processing capabilities; however, memory is still a major bottleneck, a problem that is especially significant in large language models with high memory requirements, when it is unclear whether using all model layers is crucial for maintaining generation quality. In addition to that, the varying workloads on edge devices call for an adaptive solution for the efficient utilization of hardware resources. In this paper, we propose a flexible layer-wise compression approach that produces multiple model variants. Our solution leverages a smart storage mechanism to ensure efficient storage and rapid loading of the most appropriate variant tailored to the Quality of Service (QoS) requirements and the dynamic workload of the system. </p> 
-						</div>
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 12h10</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Tracing-Based I/O Diagnosis for Performance Optimization of Software-Defined Storage Systems </h2>
-							<h3> Lina Sadi and Islam Kedadsa</h3>
-							<p> Software-Defined Storage (SDS) is gaining traction in edge environments due to its adaptability and decoupling from hardware constraints. However, characterizing and optimizing SDS performance remains challenging, particularly in resource-constrained systems. In this work, we present a systematic tracing-based methodology for detecting and analyzing I/O performance bottlenecks across the Linux storage stack—from the block layer down to device-level interactions. By leveraging low-level tracers, we trace I/O operations to identify the root causes of performance degradation, such as disk queuing delays and write amplification. By simulating diverse I/O workloads, we collect trace data that helps pinpoint specific issues such as throughput degradation, latency spikes, and inefficient I/O patterns. Based on the insights gathered, we propose corrective optimization strategies at the OS level, such as dynamic I/O throttling, aimed at mitigating the identified bottlenecks. Using a Ceph-based deployment as a case study, we aim to demonstrate how our methodology can be applied to effectively diagnose performance issues in near real-time and propose actionable solutions to enhance storage efficiency and maintain stable performance in edge computing environments.</p> 
-						</div>
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/hocine_mahni.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 12h15</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> FABME: File-Level Placement Policy with Admission Control, Burst Prefetching, and Multi-Criteria Eviction for HPC Multi-Tier Storage</h2>
-							<h3> Hocine Mahni </h3>
-							<p> High-performance computing (HPC) installations usually front a large-capacity HDD tier with a limited, low-latency SSD tier.
-Data migration is driven by Hierarchical Storage Management (HSM) software such as the Robinhood Policy Engine, which operates strictly at file granularity. This constraint prevents direct reuse of the many block-level cache algorithms proposed in the literature.
-Our previous multi-criteria replacement policy, MC-ARC, showed that combining recency, frequency, predicted lifetime and user fairness at file scope can outperform classical block caches. Analysis of production traces nevertheless uncovered three recurring pathologies:
-(P1) cache pollution by very large or rarely used files;
-(P2) post-burst persistence of files whose references occur in short, periodic I/O bursts;
-(P3) thrashing when several large files alternate and collectively overflow SSD capacity.
-We introduce FABME—a new file-level placement policy that preserves MC-ARC’s multi-criteria spirit while explicitly addressing P1–P3. Running fully on-line and relying solely on metadata already captured by Robinhood changelogs, FABME fuses three components:
-Admission control: on every miss, the policy decides whether to admit the file to SSD or confine it to HDD, using file size, access density, inactivity window, and a benefit–cost estimate;
-Burst-aware prefetch and eviction: a lightweight detector predicts periodic bursts, triggers just-in-time prefetching, and schedules early eviction to avoid post-burst pollution;
-MC-ARC multi-criteria eviction: for admissible files, the final victim is selected with the original recency–frequency–lifetime–fairness score.
-Ongoing experiments on Yombo, Synthesized Google I/O Traces and IBM ObjectStoreTrace, executed with our open two-tier simulator, will report hit rate, trace-processing time and migration overhead. </p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
+						<h3> 9h00-11h Workflows </h3>
 						<div class="col-md-2 col-sm-2">
 							<img src="images/male_speaker.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 12h20</span> 
+								<span><i class="fa fa-clock-o"></i> 9h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Title to be announced </h3>
-							<h3> TBA </h3>
+							<h2> Title to annouced  </h2>
+							<h3> Speaker to be announced </h3>
 							<p> Abstract to be provided </p> 
 						</div>
 
@@ -481,111 +319,24 @@ Ongoing experiments on Yombo, Synthesized Google I/O Traces and IBM ObjectStoreT
                         			</div>
 					</div>
 
-					<div role="tabpanel" class="tab-pane" id="hpc">
-						<h3> 14h00-16h00 HPC and Lustre </h3>
+					<div role="tabpanel" class="tab-pane" id="eo_and_data">
+						<h3> 9h-11h Earth Observation and Data Management </h3>
 
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/sebastien_buisson.jpg" class="img-responsive" alt="program">
+							<img src="images/jt.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 14h00</span> 
+								<span><i class="fa fa-clock-o"></i> 9h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session </span>
 							</h6>
-							<h2>Lustre: status and path forward </h2>
-							<h3>Sebastien Buisson, Whamcloud</h3>
-							<p> Lustre is the leading open-source and open-development file system for HPC. Around two thirds of the top 100 supercomputers use Lustre. It is a community developed technology with contributors from around the world. Lustre currently supports many HPC infrastructures beyond scientific research, such as financial services, energy, manufacturing, and life sciences and in recent years has been leveraged by cloud solutions to bring its performance benefits to a variety of new use cases (particularly relating to AI). This talk will reflect on the current state of the Lustre ecosystem and also will include the latest news relating to Lustre community releases (LTS releases and major releases), the roadmap, and details of features under development.</p>
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Philippe_couvee.jpg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 14h20</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Ephemeral IO services </h2>
-							<h3>  Philippe Couvée, EVIDEN </h3>
-							<p> Ephemeral IO services, explored in the IO-SEA project, and being extended in the EUPEX project, help data intensive HPC workflows minimizing data movements, keeping active data close to compute nodes for their entire durations, and isolating IO intensive steps from other applications sharing the same file systems. They range from workflows-dedicated parallel file systems to Burst Buffers and more specific object storage services. They run on dedicated hardware resources.
-
-In this talk, we will introduce the main concepts, the intitial user interfaces and performance results, and discuss the challenges still to be addressed to make it a mainstream solution. </p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/salem_el_sayed.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 14h40</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Exabyte for ExaScale and other storage systems </h2>
-							<h3> An overview of Juelich Supercomputing Centre Storage landscape </h3>
-							<h3> Salem el Sayed, ForschungsZentrum Jülich </h3>
-							<p> In 2024, the Juelich Supercomputing Centre successfully deployed the sixth iteration of its central storage system, JUelich STorage (JUST)6, a 154 PiB disk storage system based on IBM's Storage Scale System 6000. This milestone was achieved after migrating over 32 PiB of data to the new infrastructure. The Centre is now expanding its storage capabilities with the deployment of the 300 PiB disk-based ExaSTORE and 29 PiB NVMe-based ExaFLASH systems, both designed to support the upcoming Exascale system JUPITER. This presentation will provide an overview of the Juelich storage landscape, highlighting the challenges and strategies for deploying, migrating, and maintaining complex storage infrastructures at scale.  </p> 
-						</div>
-
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/matthieu_dorier.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 15h00</span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Ten years of Mochi data services for HPC: a retrospective</h2>
-							<h3> Matthieu Dorier, Argonne National Laboratory </h3>
-							<p> Over the last 10 years, the Mochi project has explored the notion of composition to foster research and development of HPC data services. Adopted by an increasing number of international users, its collection of components and its methodology allow for rapid development of new data services tailored to specific use cases and applications. In this talk we will look back on this decade of research in and around Mochi, providing a critical retrospective with lessons learned and perspectives for the future of HPC data service research. </p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 15h20 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Phobos Parallel Heterogenous OBject Store</h2>
-							<h3> Gauthier Evraerd, CEA/DAM </h3>
-                            				<p> Phobos, standing for Parallel Heterogeneous OBject Store, is a software designed to handle large volumes of data across different storage technologies. It was firstly designed to manage tape storage, thus offering tape lifecycle features such as repack, but is also able to store data on POSIX and RADOS systems, which can be used as cache systems before tape archival. Multiple interfaces were developped to use Phobos as an HSM-end backend, like Lustre and iRODS. This presentation will update the current status of Phobos development and detail some new features like the object copy management.</p> 
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Luan_Teylo.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 15h40 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> A Deep Look Into the Temporal I/O Behavior of HPC Applications </h2>
-							<h3> Luan Teylo, INRIA </h3>
-							<p> The increasing gap between compute and I/O speeds in high-performance computing (HPC) systems imposes the need for techniques to improve applications’ I/O performance. Such techniques must rely on assumptions about I/O behavior in order to efficiently allocate I/O resources such as burst buffers, to schedule accesses to the shared parallel file system or to delay certain applications at the batch scheduler level to prevent contention, for instance. In this paper, we verify these common assumptions about I/O behavior, specifically about temporal behavior, using over 440,000 traces from real HPC systems. By combining traces from diverse systems, we characterize the behaviors observed in real HPC workloads. Among other findings, we show that I/O activity tends to last for a few seconds, and that periodic jobs are the minority, but responsible for a large portion of the I/O time. Furthermore, we make projections for the expected improvement yielded by popular approaches for I/O performance improvement. Our work provides valuable insights to everyone working to alleviate the I/O bottleneck in HPC. </p> 
+							<h2>Title to be announced</h2>
+							<h3>Jean-Thomas Acquaviva, DDN</h3>
+							<p> abstract to be provided </p>
 						</div>
 
 						<!-- program divider -->
@@ -600,20 +351,6 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 							<h4> ** 30 minute break **</h4>
                         			</div>
 
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/panel.jpg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 16h30-17h30 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> Panel discussion </h2>
-							<h3> Trends in I/O and Storage </h3>
-						</div>
 			</div>
 		</div>
 	</div>
@@ -629,7 +366,7 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 		<div class="row">
 				<div class="section-title">
 					<h2>Steering Committee</h2>
-					<p>Since its inception 8 years ago, Per3S is managed by a steering committee, the committee is fluid and tends to evolve from an edition to the other.</p>
+					<p>The summer school has been organized by the DaFab consortium as a whole, nevertheless, 4 memebers are specifically involved in the organization.</p>
 				</div>
 			</div>
 
@@ -708,11 +445,10 @@ Jean-Thomas successively worked for Intel, the University of Versailles and the 
 
 			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
 				<h2>Venue</h2>
-			<p>The workshop will be held in <a href="http://www.maisondesmines.com"> the faculty of Computer Sciences, University of Ljubjana</a>, The Discovery Science 2025 International Conference will take place at the Faculty of Computer and Information Science, University of Ljubljana.</p>
-				<h4><a href="http://www.maisondesmines.com"> Maison des Mines et des Ponts </a></h4>
+			<p>The workshop will be held in <a href="https://www.fri.uni-lj.si/en"> the faculty of Computer Sciences, University of Ljubjana</a>, The Discovery Science 2025 International Conference will take place at the Faculty of Computer and Information Science, University of Ljubljana.</p>
   				<h4>Večna pot 113,</h4>
   				<h4> Ljubljana, Slovenia.</h4>
-				<h4> <a href="http://www.maisondesmines.com/contact">Access map</a> </h4>
+				<h4> <a href="https://maps.app.goo.gl/WEPLSUXuUew4vopk9">Access map</a> </h4>
 			</div>
 
 		</div>
@@ -736,11 +472,11 @@ Jean-Thomas successively worked for Intel, the University of Versailles and the 
 
 			<div class="wow fadeInUp col-md-offset-0 col-md-4 col-sm-4 col-xs-4" data-wow-delay="0.3s">
 				<a href="https://ddn.com">
-					<img src="images/FR2030_Cloud_Couleur.png" class="img-responsive" title="DataDirect Networks (DDN) is the world’s leading big data storage supplier to data-intensive, global organizations" alt="https://ddn.com">
+					<img src="images/Logo_CERN.jpg" class="img-responsive" title="DataDirect Networks (DDN) is the world’s leading big data storage supplier to data-intensive, global organizations" alt="https://ddn.com">
 			</div>
 			<div class="wow fadeInUp col-md-offset-0 col-md-4 col-sm-4 col-xs-4" data-wow-delay="0.3s">
 				<a href="https://ddn.com">
-					<img src="images/logo_numex.png" class="img-responsive" title="DataDirect Networks (DDN) is the world’s leading big data storage supplier to data-intensive, global organizations" alt="https://ddn.com">
+					<img src="images/luxprovide.png" class="img-responsive" title="DataDirect Networks (DDN) is the world’s leading big data storage supplier to data-intensive, global organizations" alt="https://ddn.com">
 			</div>
 			<div class="wow fadeInUp col-md-offset-0 col-md-4 col-sm-4 col-xs-4" data-wow-delay="0.3s">
 				<a href="https://ddn.com">
@@ -748,17 +484,24 @@ Jean-Thomas successively worked for Intel, the University of Versailles and the 
 			</div>
 			<div class="wow fadeInUp col-md-4 col-sm-3 col-xs-4" data-wow-delay="0.6s">
 				<a href="https://u-paris.fr">
-				<img src="images/Universite_Paris-Cite-logo.jpeg" class="img-responsive" title="Data Intensive and Knowledge Oriented Systems (diNo)">
+				<img src="images/gcore_logo.png" class="img-responsive" title="Data Intensive and Knowledge Oriented Systems (diNo)">
 			</div>
 			<div class="wow fadeInUp col-md-4 col-sm-3 col-xs-4" data-wow-delay="0.6s">
 				<a href="https://www.ensta-bretagne.fr">
-				<img src="images/ENSTA-Bretagne-large.png" class="img-responsive" title="ENSTA Bretagne est l’école d’ingénieurs pour l’innovation dans le secteur maritime, la défense, les transports/mobilité, l’aérospatiale et les technologies numériques.">
+				<img src="images/FORTH_logo.png" class="img-responsive" title="ENSTA Bretagne est l’école d’ingénieurs pour l’innovation dans le secteur maritime, la défense, les transports/mobilité, l’aérospatiale et les technologies numériques.">
 			</div>
-
-			<!--	<div class="wow fadeInUp col-md-3 col-sm-6 col-xs-6" data-wow-delay="0.9s">
-				<img src="images/cea.png" class="img-responsive" alt="sponsors">	
+			<div class="wow fadeInUp col-md-4 col-sm-3 col-xs-4" data-wow-delay="0.6s">
+				<a href="https://www.ensta-bretagne.fr">
+				<img src="images/jsi_logo.png" class="img-responsive" title="ENSTA Bretagne est l’école d’ingénieurs pour l’innovation dans le secteur maritime, la défense, les transports/mobilité, l’aérospatiale et les technologies numériques.">
 			</div>
-			-->
+			<div class="wow fadeInUp col-md-4 col-sm-3 col-xs-4" data-wow-delay="0.6s">
+				<a href="https://www.ensta-bretagne.fr">
+				<img src="images/ECMWF_logo.svg.png" class="img-responsive" title="ENSTA Bretagne est l’école d’ingénieurs pour l’innovation dans le secteur maritime, la défense, les transports/mobilité, l’aérospatiale et les technologies numériques.">
+			</div>
+			<div class="wow fadeInUp col-md-4 col-sm-3 col-xs-4" data-wow-delay="0.6s">
+				<a href="https://www.ensta-bretagne.fr">
+				<img src="images/Thales_Alenia_Space_logo.png" class="img-responsive" title="ENSTA Bretagne est l’école d’ingénieurs pour l’innovation dans le secteur maritime, la défense, les transports/mobilité, l’aérospatiale et les technologies numériques.">
+			</div>
 		</div>
 	</div>
 </section>
