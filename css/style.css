@@ -15,7 +15,7 @@ body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typography              
 -----------------------------------------*/
 h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
@@ -530,11 +530,20 @@ footer {
    Venir section              
 -----------------------------------------*/
 #venir {
-    background: url('../images/map_Ljubljana_university.png') 100% 0 repeat-y fixed;
+    /*
+     * background: url('../images/map_Ljubljana_university.png') 100% 0 repeat-y fixed;
+     */
+    background: url('../images/summer_school_venue.png') 100% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
     padding-bottom: 7rem;
+}
+
+#venir h3 {
+  line-height: 36px;
+  /* background: #ffffff;  */
+  background: rgba(240, 248, 255, 0.7);
 }
 
 #venir p {
