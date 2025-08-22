@@ -338,7 +338,8 @@ mark {
 							</h6>
 							<h2> Building the High-Performance Core of AI Factories </h2>
 							<h3> Farouk Mansouri, LuxProvide</h3>
-							<p> AI factories must be designed to handle the most demanding stages of the machine learning lifecycle—data ingestion, preprocessing, and large-scale model training. These early phases place extreme demands on infrastructure, from GPU-accelerated supercomputers and high-throughput storage to low-latency interconnects and distributed data pipelines. This session explores how to architect and optimize dynamic, high-performance environments capable of processing massive datasets, orchestrating parallel training jobs, and scaling resources efficiently. Participants will gain practical insights into overcoming data bottlenecks, maximizing hardware utilization, and integrating HPC and cloud resources to deliver speed, scalability, and cost-efficiency at the start of the AI production chain.</p> 
+							<p> AI factories must be designed to handle the most demanding stages of the machine learning lifecycle—data ingestion, preprocessing, and large-scale model training. These early phases place extreme demands on infrastructure, from GPU-accelerated supercomputers and high-throughput storage to low-latency interconnects and distributed data pipelines. This session explores how to architect and optimize dynamic, high-performance environments capable of processing massive datasets, orchestrating parallel training jobs, and scaling resources efficiently. Participants will gain practical insights into overcoming data bottlenecks, maximizing hardware utilization, and integrating HPC and cloud resources to deliver speed, scalability, and cost-efficiency at the start of the AI production chain.
+							</p> 
 						</div>
 
 						<!-- program divider -->
@@ -353,12 +354,13 @@ mark {
 								<span><i class="fa fa-clock-o"></i> 9h45</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> AI and Infrastructure: Running AI at Scale</h2>
+							<h2> - Evolving Cloud Infrastructures for AI Workloads - High-Performance Foundations for AI Training </h2>
 							<h3> Clara Ulken, GCore </h3>
 							<h4> At GCore, Clara is leading cross-functional initiatives that align engineering, product, and business strategies to deliver scalable, high-impact technology solutions. </h4>
-							<p> abstract to be provided.  </p> 
+							<p> 
+							AI development begins with workloads that demand extreme performance. Training large language models and generative AI systems requires GPU acceleration, low-latency interconnects, and scalable storage to handle massive datasets. This session explores how Gcore’s GPU Cloud—powered by NVIDIA A100, H100, and H200 instances with InfiniBand networking—delivers HPC-grade capabilities in a flexible, cloud-native environment. We will look at distributed training strategies, mixed precision techniques, and orchestration tools that transform supercloud-class resources into elastic infrastructures for enterprise AI.
+							</p> 
 						</div>
-
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 						<div class="col-md-2 col-sm-2">
@@ -373,7 +375,6 @@ mark {
 						<!-- program divider -->
 
 						<div class="program-divider col-md-12 col-sm-12"></div>
-
 						<div class="col-md-2 col-sm-2">
 							<img src="images/farouk.png" class="img-responsive" alt="program">
 						</div>
@@ -384,7 +385,8 @@ mark {
 							</h6>
 							<h2> Delivering Agility: From Trained Models to Scalable AI Services </h2>
 							<h3> Farouk Mansouri, LuxProvide</h3>
-							<p> Once AI models are trained, the challenge shifts to delivering them as fast, reliable, and cost-effective services. Inference workloads require entirely different priorities—low latency, high availability, and seamless integration into production systems—often through containerized microservices, auto-scaling cloud platforms, or edge computing. This session examines how to bridge the performance–agility gap, from compressing and optimizing models for deployment to building resilient MLOps pipelines for monitoring, retraining, and governance. Real-world patterns and case studies will illustrate how to move from HPC-heavy training to lightweight, scalable inference while maintaining cost control, compliance, and operational excellence.</p> 
+							<p> Once AI models are trained, the challenge shifts to delivering them as fast, reliable, and cost-effective services. Inference workloads require entirely different priorities—low latency, high availability, and seamless integration into production systems—often through containerized microservices, auto-scaling cloud platforms, or edge computing. This session examines how to bridge the performance–agility gap, from compressing and optimizing models for deployment to building resilient MLOps pipelines for monitoring, retraining, and governance. Real-world patterns and case studies will illustrate how to move from HPC-heavy training to lightweight, scalable inference while maintaining cost control, compliance, and operational excellence.
+							</p> 
 						</div>
 
 						<!-- program divider -->
@@ -399,9 +401,9 @@ mark {
 								<span><i class="fa fa-clock-o"></i> 11h45</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> Title to be announced </h2>
+							<h2> Evolving Cloud Infrastructures for AI Workloads – Agility at Scale: Deploying AI Everywhere </h2>
 							<h3> Clara Ulken, GCore </h3>
-							<p> abstract to be provided.  </p> 
+							<p> AI is no longer confined to research or centralized datacenters, but it increasingly powers real-time, interactive experiences where every millisecond counts. This session focuses on Gcore’s Everywhere Inference platform, which brings models closer to end users, enabling ultra-low latency, reducing unnecessary backhaul traffic, and supporting regional data handling requirements. Gcore has extended its global edge infrastructure with GPU-powered Points of Presence worldwide, creating a platform designed for workloads where speed and locality make a measurable difference. With Kubernetes integration, autoscaling, and support for hybrid deployments, enterprises can deploy optimized inference services that adapt in real time to diverse workloads. From finance to conversational AI, fraud detection and live content personalization, to immersive gaming and AR/VR, inference at the edge delivers tangible improvements in performance and user experience.  </p> 
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -415,7 +417,6 @@ mark {
 							<h4> ** lunch break **</h4>
                         			</div>
 
-
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 						<div class="col-md-2 col-sm-2">
@@ -427,10 +428,126 @@ mark {
 								<span><i class="fa fa-map-marker"></i> Hands-on Session</span>
 						</h6>
 							<h4> Hands-on Session. Participant will have the opportunity to access a remote super-computer to run tests and experiments</h4>
-							<h4> prerequisite:</h4>
-							<p> to be detailed </p>
-							<h4> Outline of the sessions</h4>
-							<p> to be detailed </p>
+							<h2> Part 1 – HPC Training/Finetuning of an LLM </h2>
+							<h3> Goal: Show participants how to run and scale a training job on an HPC system. (45 minutes)</h3>
+							<h4> 1. Introduction to HPC Infrastructure </h4>
+							<p>
+							o Overview of the HPC cluster architecture (login nodes, compute nodes, GPU nodes)
+							o SLURM basics: job submission, partitions, scheduling policies
+							o Storage layout and data transfer tips
+							</p>
+							<h4> 2. Exploration of Performance Tools </h4>
+							<p>
+							o htop, nvidia-smi, ibstat for InfiniBand, iostat for disk I/O
+							o Brief on nvtop or similar GPU monitoring tools
+							o How to interpret load, memory, and network usage
+							</p>
+							<h4> 3. Simple Run </h4>
+							<p>
+							o Launch a minimal LLM training job (small dataset, reduced parameters)
+							o Show SLURM job submission (sbatch), log checking (squeue, sacct)
+							o Walk through model directory structure and outputs
+							</p>
+							<h4> 4. Run at Scale </h4>
+							<p>
+							o Increase dataset/model size and GPU count
+							o Demonstrate distributed training (PyTorch DDP, DeepSpeed, or Megatron-LM)
+							o Monitor scaling behavior and GPU utilization in real-time
+							</p>
+							<h4> 5. Monitoring & Optimization </h4>
+							<p>
+							o Detect bottlenecks (GPU idle time, I/O wait, network congestion)
+							o Adjust batch size, precision (FP32 vs FP16), and parallelism strategies
+							o Quick discussion: trade-offs between speed and accuracy
+							</p>
+                        			</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<div class="col-md-2 col-sm-2">
+							<img src="images/coffee_small.png" class="img-responsive" alt="program">
+                        			</div>
+						<div class="col-md-10 col-sm-10">
+						<h6>
+							<span><i class="fa fa-clock-o"></i> 14h45 </span> 
+						</h6>
+							<h4> ** 10 minute break **</h4>
+                        			</div>
+
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<div class="col-md-2 col-sm-2">
+							<img src="images/laptop.png" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h2> Part 2 – Kubernetes Deployment of the Trained Model </h2>
+							<h3> Goal: Deploy models as a scalable inference service (45 minutes)</h2>
+							<h4> 1. Introduction to Kubernetes Infrastructure </h4>
+							<p>
+							o K8s architecture: master, worker nodes, pods, services, ingress
+							o Overview of deployment options: cloud K8s, on-prem, hybrid
+							o Brief on container images and registries
+							</p>
+							<h4> 2. Exploration of Performance Tools </h4>
+							<p>
+							o kubectl top nodes/pods for resource monitoring
+							o Logs (kubectl logs), kubectl describe for debugging
+							o K8s dashboard or Lens for visual inspection
+							</p>
+							<h4> 3. Simple Run </h4>
+							<p>
+							o Deploy model as a single replica pod with REST API (FastAPI/Flask)
+							o Expose via NodePort or port-forwarding
+							o Test with a sample query
+							</p>
+							<h4> 4. Run at Scale </h4>
+							<p>
+							o Scale replicas using kubectl scale or HPA (Horizontal Pod Autoscaler)
+							o Demonstrate load testing (e.g., hey or ab command)
+							o Show autoscaling behavior under increasing load
+							</p>
+							<h4> 5. Monitoring & Optimization </h4>
+							<p>
+							o Identify bottlenecks: CPU/GPU constraints, network latency
+							o Optimize container startup, model loading time, batch inference
+							o Discuss cost/performance trade-offs in scaling
+							</p>
+						</div>
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<div class="col-md-2 col-sm-2">
+							<img src="images/coffee_small.png" class="img-responsive" alt="program">
+                        			</div>
+						<div class="col-md-10 col-sm-10">
+						<h6>
+							<span><i class="fa fa-clock-o"></i> 15h40 </span> 
+						</h6>
+							<h4> ** 10 minute break **</h4>
+                        			</div>
+						<div class="program-divider col-md-12 col-sm-12"></div>
+						<div class="col-md-2 col-sm-2">
+							<img src="images/laptop.png" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h2> Part 3 – End-to-End Challenge & Wrap-Up </h2>
+							<h3> Goal: Apply both HPC and K8s learnings to simulate a full AI factory pipeline (45 minutes) </h3>
+							<h4> 1. End-to-End Integration </h4>
+							<p>
+							o Take the trained model from HPC output
+							o Package it into a Docker image
+							o Push image to registry for K8s deployment
+							</p>
+							<h4> 2. Performance Challenge </h4>
+							<p>
+							o Teams run the model at scale and optimize throughput & latency
+							o Compare scaling behavior between HPC training and K8s inference
+							o Introduce optional constraints (cost cap, latency target)
+							</p>
+							<h4> 3. Wrap-Up & Key Takeaways </h4>
+							<p>
+							o Recap performance/agility lessons from lecture
+							o Share best practices cheat-sheet for HPC and K8s operations
+							o Q&+A + feedback
+							</p>
                         			</div>
 					</div>
 
