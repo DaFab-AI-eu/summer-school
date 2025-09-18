@@ -220,21 +220,7 @@ mark {
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="ai_and_eo">
 						<h3> 9h00-12h00   AI and Earth Observation </h3>
-                                                <div class="program-divider col-md-12 col-sm-12"></div>
 
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Alena.jpeg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
-								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
-							</h6>
-							<h2> AI introduction in Remote Sensing</h2>
-							<h3> Alena Bakhorina, GCore</h3>
-							<p> Evolution of AI technologies. Era of Foundation Models. Foundation Models in geoscience & datasets used for training. Popular Python frameworks for working with Earth Observation data. European projects in EO and AI.</p>
-						</div>
 						<!--program divider -->
                                                 <div class="program-divider col-md-12 col-sm-12"></div>
 						<div class="col-md-2 col-sm-2">
@@ -242,7 +228,7 @@ mark {
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h45 </span> 
+								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Earth Observation Remote Sensing: From Copernicus to Thales Alenia Space AI Applications</h2>
@@ -250,6 +236,20 @@ mark {
 							<h4> Michelle Aubrun received the Engineering degree in civil engineering and geomatics in 2013 and the Ph.D. degree in geography on SAR satellite image processing from the University of Montreal, Montreal, Canada, in 2019. She joined Thales Alenia Space in the beginning of 2018. Since then, she has been involved in several projects concerning image processing by deep learning approaches for remote sensing applications. Since 2020, she has also been a Researcher with the French Research Institute of Technology Saint Exupery, Toulouse, France. Her research interests include image representation learning with self-supervised approaches.</h4>
 							<p> What is Earth Observation remote sensing? What are the key characteristics of EO data? What are its main fields of application?  We will also introduce a concrete EO program called Copernicus.</p>
 
+						</div>
+						<!--program divider -->
+                                                <div class="program-divider col-md-12 col-sm-12"></div>
+						<div class="col-md-2 col-sm-2">
+							<img src="images/Alena.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 9h45 </span> 
+								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
+							</h6>
+							<h2> AI introduction in Remote Sensing</h2>
+							<h3> Alena Bakhorina, GCore</h3>
+							<p> Evolution of AI technologies. Era of Foundation Models. Foundation Models in geoscience & datasets used for training. Popular Python frameworks for working with Earth Observation data. European projects in EO and AI.</p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -315,9 +315,48 @@ mark {
 								<span><i class="fa fa-map-marker"></i> Hands-on Session</span>
 						</h6>
 							<h4> Hands-on Session. Participant will have the opportunity to access a remote super-computer to run tests and experiments</h4>
-							<h4> prerequisite:</h4>
-							<p> to be detailed </p>
-							<h4> Outline of the sessions</h4>
+							<h4> Prerequisite: Notebook; Google account to log in Google Colab / or python with conda env + jupyter notebook locally </h4>
+
+
+							<p> 
+							<ul>
+								<li>	[5 min] Setup </li>
+								<ul>
+									<li> Runtime 
+									<li>Installations </li>
+									<li>Mount Google Drive  </li>
+									<li>Dataset download </li>
+								</ul>
+								<li> [15 min] Sen1Floods11 Dataset </li>
+								<ul>
+									<li> Overview </li>
+									<li> Visualizations  </li>
+									<li> Dataset preparation </li>
+								</ul>
+								<li> [20 min] Finetuning Geo Foundation Models (TerraMind / Prithvi) </li>
+								<ul>
+									<li> Tensorboard </li>
+									<li> Configuration file </li>
+									<li> Finetuning for 5 epochs </li>
+									<li> Test metrics for trained model </li>
+								</ul>
+								<li> [10 min] Inference </li>
+								<ul>
+									<li> Sentinel-2 product search </li>
+									<li> Web interface  </li>
+									<li> STAC API in Python </li>
+								</ul>
+								<li> [20 min] Inference workflow on Sentinel-2 product </li>
+								<ul>
+									<li> ONNX conversion </li>
+									<li> Inference steps explanation </li>
+									<li> Run </li>
+									<li> Visualizations outputs </li>
+								</ul>
+								<li> [10 min] Q & A </li>
+							</ul>
+							</p>
+							<h4> End-to-end AI pipeline for flood detection </h4>
 							<p> to be detailed </p>
                         			</div>
 					</div>
